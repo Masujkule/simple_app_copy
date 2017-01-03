@@ -34,7 +34,11 @@ body {
 	display: inline-block;
 	background-color: #2ecee5;
 }
-.nav ul li a {
+.
+
+
+f 
+ul li a {
 	color: white;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
@@ -50,13 +54,13 @@ body {
 .nav a {
 	font-family:  Helvetica, Arial, sans-serif;
 	font-size: 2em;
-	font font-weight: 100;
+	font-weight: 100;
 	-webkit-margin-before: 0;
 }
 .navbar-nav {
 	font-family: Courier, Helvetica, Arial, sans-serif;
 	font-size: 1em;
-	font font-weight: 100;
+	font-weight: 100;
 	-webkit-margin-before: 0;
 	position: static;	
 }
