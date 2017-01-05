@@ -72,8 +72,14 @@ body {
   
   }
   .navbar-toggle {
-  	background-color: black;
-  	right: 0em;
+  	background-color: #eee;
+    width: 65px;
+	}
+  
+  .navbar-toggle .icon-bar {
+  	background-color: #000000;
+  	width: 42px;
+    height: 3px;
   }
   .navbar-inverse  {
     border-color: #101010;  
