@@ -86,7 +86,7 @@ body {
 .navbar-inverse .navbar-toggle .icon-bar {
 	background-color: #000000;
 	width: 30px;
-  height: 3px;
+  height: 1px;
 }
 .navbar-inverse  {
   border-color: #101010;  

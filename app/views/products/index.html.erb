@@ -1,62 +1,36 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Products</h1>
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td><%= product.name %></td>
-        <td><%= product.description %></td>
-        <td><%= product.image_url %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
 <br>
 
 <%= link_to 'New Product', new_product_path %>
 
-<div class="container">   <!-- products lisnitngs-->
+<div class="container-fluid">
+  <div class="row">
+    <% @products.each do |product| %>
+      <div class="col-xs-12 col-md-4">
+      <%= image_tag(product.image_url, class: "img-responsive img-products") %>
+        <h1 class="product-details"><%=product.name %></h1>
+        <h2 class="product-details"><%=product.description %></h2>
+        <p2 class="product-details"><%=product.color %></p2>
+        <strong class="product-price">'price: $'<%=product.price %></strong>
+        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </div><!-- /col -->
+    <% end %>
+  </div>
+</div>
 
-      <div class="row">
-          <div class="col-md-4 col-xs-12">
-            
-              <img class="img-responsive img-products" src=http://cdn.shopify.com/s/files/1/0597/1765/products/Hawaiian_Hawaiian_1_cluster_web_1024x1024_v2_59be63d6-7a0b-4649-8464-f568cea271d5_1024x1024.jpg?v=1423096447>
-              <img class="img-responsive img-products" src=http://cdn.shopify.com/s/files/1/0597/1765/products/Hawaiian_Hawaiian_1_cluster_web_1024x1024_v2_59be63d6-7a0b-4649-8464-f568cea271d5_1024x1024.jpg?v=1423096447> 
-              <img class="img-responsive img-products" src=http://cdn.shopify.com/s/files/1/0597/1765/products/Hawaiian_Hawaiian_1_cluster_web_1024x1024_v2_59be63d6-7a0b-4649-8464-f568cea271d5_1024x1024.jpg?v=1423096447>                        
-         </div> <!--col-md-4 col-xs-12-->
           
-          <div class="col-md-4 col-xs-12">
-            
-              <img class="img-responsive img-products" src=http://cdn.shopify.com/s/files/1/0597/1765/products/Hawaiian_Hawaiian_1_cluster_web_1024x1024_v2_59be63d6-7a0b-4649-8464-f568cea271d5_1024x1024.jpg?v=1423096447>
-              <img class="img-responsive img-products" src=http://cdn.shopify.com/s/files/1/0597/1765/products/Hawaiian_Hawaiian_1_cluster_web_1024x1024_v2_59be63d6-7a0b-4649-8464-f568cea271d5_1024x1024.jpg?v=1423096447> 
-              <img class="img-responsive img-products" src=http://cdn.shopify.com/s/files/1/0597/1765/products/Hawaiian_Hawaiian_1_cluster_web_1024x1024_v2_59be63d6-7a0b-4649-8464-f568cea271d5_1024x1024.jpg?v=1423096447>                        
-         </div> <!--col-md-4 col-xs-12-->
-
-          <div class="col-md-4 col-xs-12">
-            
-              <img class="img-responsive img-products" src=http://cdn.shopify.com/s/files/1/0597/1765/products/Hawaiian_Hawaiian_1_cluster_web_1024x1024_v2_59be63d6-7a0b-4649-8464-f568cea271d5_1024x1024.jpg?v=1423096447>
-              <img class="img-responsive img-products" src=http://cdn.shopify.com/s/files/1/0597/1765/products/Hawaiian_Hawaiian_1_cluster_web_1024x1024_v2_59be63d6-7a0b-4649-8464-f568cea271d5_1024x1024.jpg?v=1423096447> 
-              <img class="img-responsive img-products" src=http://cdn.shopify.com/s/files/1/0597/1765/products/Hawaiian_Hawaiian_1_cluster_web_1024x1024_v2_59be63d6-7a0b-4649-8464-f568cea271d5_1024x1024.jpg?v=1423096447>                        
-         </div> <!--col-md-4 col-xs-12-->
-
-</div> <!--end row>
 
 
+</div> <!--end row-->
 
+
+<!--<img class="img-responsive img-products" src=http://cdn.shopify.com/s/files/1/0597/1765/products/Hawaiian_Hawaiian_1_cluster_web_1024x1024_v2_59be63d6-7a0b-4649-8464-f568cea271d5_1024x1024.jpg?v=1423096447>-->                        
 
 
 
