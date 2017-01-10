@@ -4,7 +4,8 @@
       <title>shareyoursurf</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -12,20 +13,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
   
-  <%= stylesheet_link_tag 'application'%>
   
+ 
   </head>
 
   <body>
   <nav>
-<div class="container">
 	<ul class= "menu-nav">
 		<li><a>career</a></li>
 		<li><a>media</a></li>
 		<li><a>concept</a></li>
 		<li><a>members</a></li>
 	</ul>
-</div> <!--end dav menu container-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">   <!--nav container--> 
         <div class="navbar-header">
@@ -52,18 +51,8 @@
       </div> <!--end nav container--> 
     </nav> <!--end nav class-->
 
-
-
-
-
-  
-
-  
-
-
 <%= yield %>
-
-<footer class="footer-social">   
+<footer class="footer">   
   <h1> &copy; 2016 Surfshare </h1>
 </footer>
     

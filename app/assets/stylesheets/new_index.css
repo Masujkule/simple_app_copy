@@ -1,0 +1,10 @@
+.header-content>h1 {
+	position: relative;
+	margin-top: 1em;
+}	
+.header-content>p {
+	margin: 33px 0px;
+}
+.img-homepage {
+	margin:0px;	
+}

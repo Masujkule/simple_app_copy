@@ -1,14 +1,7 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kamiladydak\/Desktop\/sample_app\/app\/assets\/stylesheets\/products\.scss}line{font-family:\000032}}
-.img-responsive {
-  margin: 10px 0px;
+.img-products {
+  margin: 10px;
   width: 120em;
-  height: 100%; 
-}
-.col-md-4 {
-	padding: 0.5%;
-}
-
-
-
+  height: 100%; }
 
 /*# sourceMappingURL=products.css.map */
