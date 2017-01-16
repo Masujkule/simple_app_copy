@@ -88,9 +88,6 @@
 	width: 30px;
   height: 1px;
 }
-.navbar-inverse .navbar-toggle:focus: {
-		background-color: yellow;
-}
 .navbar-inverse .navbar-toggle:hover {
     background-color:white;
 }
