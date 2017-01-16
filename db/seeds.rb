@@ -5,11 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Product.create(:name => "seed-generated product", :description => "I also created this product without using the HTML form")
+
  
- Product.create(:name => "Pukas Sixty Niner", :description => "an intermediate board") 
- Product.create(:name => "Pukas DFK", :description => "just a surfboard")
- Product.create(:name => "Pukas The Game", :description => "not suitable for begginers")
- Product.create(:name => "Pukas Blackwings", :description => "an egg shape board")
- Product.create(:name => "Pukas Salt Shaker", :description => "a vector board")
- Product.create(:name => "Pukas Resin Cake", :description => "egg shape board")
+ Product.create(:name => "Pukas Sixty Niner", :description => "an intermediate board", :image_url => "https://asset1.surfcdn.com/pukas-surfboards-pukas-sixty-niner-surfboard-2015-model-blue.jpg?w=1200&h=1200&r=4&q=80&o=6mGdt$NHeAx6caXBCn2i8uaVT0Ij&V=KHCk") 
+ Product.create(:name => "Pukas DFK", :description => "just a surfboard", :image_url => "https://asset1.surfcdn.com/pukas-surfboards-pukas-sixty-niner-surfboard-2015-model-blue.jpg?w=1200&h=1200&r=4&q=80&o=6mGdt$NHeAx6caXBCn2i8uaVT0Ij&V=KHCk")
+ Product.create(:name => "Pukas The Game", :description => "not suitable for begginers", :image_url => "https://asset1.surfcdn.com/pukas-surfboards-pukas-sixty-niner-surfboard-2015-model-blue.jpg?w=1200&h=1200&r=4&q=80&o=6mGdt$NHeAx6caXBCn2i8uaVT0Ij&V=KHCk")
+ Product.create(:name => "Pukas Blackwings", :description => "an egg shape board", :image_url => "https://asset1.surfcdn.com/pukas-surfboards-pukas-sixty-niner-surfboard-2015-model-blue.jpg?w=1200&h=1200&r=4&q=80&o=6mGdt$NHeAx6caXBCn2i8uaVT0Ij&V=KHCk")
+ Product.create(:name => "Pukas Salt Shaker", :description => "a vector board", :image_url => "https://asset1.surfcdn.com/pukas-surfboards-pukas-sixty-niner-surfboard-2015-model-blue.jpg?w=1200&h=1200&r=4&q=80&o=6mGdt$NHeAx6caXBCn2i8uaVT0Ij&V=KHCk")
+ Product.create(:name => "Pukas Resin Cake", :description => "egg shape board", :image_url => "https://asset1.surfcdn.com/pukas-surfboards-pukas-sixty-niner-surfboard-2015-model-blue.jpg?w=1200&h=1200&r=4&q=80&o=6mGdt$NHeAx6caXBCn2i8uaVT0Ij&V=KHCk")
