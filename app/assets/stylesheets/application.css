@@ -125,7 +125,8 @@
 	font-weight: 100;
 	-webkit-margin-before: 0;
 	position:static;	
-	float: right; 
+	float: right;
+	margin-top: 10px;
 }
 }
 
