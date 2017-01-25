@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   root'static_pages#index'
   root'static_pages#about' 
   root'static_pages#contact'
+  root'static_pages#polvo_family'
 
 
 
