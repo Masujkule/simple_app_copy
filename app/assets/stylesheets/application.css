@@ -71,12 +71,32 @@
 	display:inline-block;
 }
 .navbar-brand>img {
-    max-width: 125px;
-    margin: auto;
-    height: auto;
-    position: absolute;
-    left: 33.333%;
+  max-width: 125px;
+  margin: auto;
+  height: auto;
+  position: absolute;
+  left: 33.333%;
 }	
+/*search window form mobile*/
+.form-group {
+	display: inline-block;
+  border: 1px solid #9d9d9d;
+}
+.btn.btn-default {
+	padding: 0px;
+	height: 40px;
+	width: 40px;
+	background-color: transparent;
+	border-color: transparent;
+}
+.glyphicon-search {
+	font-size: 27px;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+ 	border-color: transparent;
+ 	margin: 0px;
+}
+/*end search window form mobile*/
 }
 .navbar-toggle {
 	background-color: white;
@@ -89,7 +109,7 @@
   height: 1px;
 }
 .navbar-inverse .navbar-toggle:hover {
-    background-color:white;
+  background-color:white;
 }
 .navbar-inverse  {
   border-color: #101010;  
