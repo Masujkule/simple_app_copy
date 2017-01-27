@@ -21,7 +21,7 @@
 		<li><%= link_to "career", root_path %></li>
 		<li><%= link_to "polvo family", root_path %></li>
 		<li><%= link_to "concept", root_path %></li>
-		<li><a>members</a></li>
+		<li><%= link_to "concept", root_path %></li>
 	</ul>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">   <!--nav container--> 
@@ -36,7 +36,7 @@
           <a class="navbar-brand" href="#">
             <%= image_tag("polvo-logo.png", class:"logo_button") %>
           </a>
-
+			
         </div> <!--end navbar header-->  
         <div class="navbar-collapse collapse pull-left" id="navbar-collapse-1">
           <ul class="nav navbar-nav large-screen">
@@ -47,7 +47,7 @@
             <li><%= link_to "polvo family", '/static_pages/polvo_family' %></li>  
         		<li class= nav-search>
         		<form class="navbar-form navbar-left" role="search">
-						  <div class="form-group">
+						  <div class="form-group-mobile">
 						  	<%= form_tag("/products", method: "get") do %>	  
 						  	<%= text_field_tag(:q) %>   
 							  </div>
@@ -56,15 +56,27 @@
 							  </button> 
 							<% end %>
 						</form>  
-        		</li>               
+        		</li> 
+        		 <li class="login">
+					  <% if user_signed_in? %>
+					    <%= link_to('Log out', destroy_user_session_path, :method => :delete) %>
+					  <% else %>
+					    <%= link_to('Log in', new_user_session_path) %>
+					  <% end %>
+					  </li>              
           </ul>
+
+ 
         </div> <!--navbar nav-->
       </div> <!--end nav container--> 
     </nav> <!--end nav class-->
 
+<p class="notice"><%= notice %></p>
+
 <%= yield %>
+
 <footer class="footer">   
-  <h1> &copy; 2017 Surfshare </h1>
+  <h1> &copy; 2017 polvosurfboards </h1>
 </footer>
     
   </body>
