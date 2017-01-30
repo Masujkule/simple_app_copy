@@ -22,8 +22,12 @@
 	height:100px;
 	width:100%;
 }
-
-
+.alert {
+	margin: 0px;
+}
+.alert-warning {
+	background-color: transparent;
+}
 
 
 
