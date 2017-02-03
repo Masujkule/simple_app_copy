@@ -4,6 +4,12 @@
   width: 120em;
   height: 100%; }
 
+.header_products h1 {
+	margin: 10px 25px;
+}
+.new_product a {
+	margin: 10px 25px;
+}
 .product-details {
 	padding: 0px;
 	font-family: Courier, Helvetica, Arial, sans-serif;

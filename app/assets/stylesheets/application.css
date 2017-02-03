@@ -22,7 +22,7 @@
 }
 
 .navbar-brand>img{
-  max-width: 60px;
+  max-width: 80px;
   margin-top: 0px;
 }
 .body {
@@ -87,7 +87,7 @@
 /*mobile changing */
 @media screen and (max-width: 620px) {
 .menu-nav {
-	margin: 95px 0 0 0;
+	margin: 95px 0 0 22px;
 	padding: 0px;
 }
 .menu-nav>li {
@@ -113,29 +113,30 @@
 
 .navbar-toggle {
 	background-color: white;
-  width: 60px;
-  height: 60px;
+  	width: 60px;
+  	height: 60px;
 }  
 .navbar-inverse .navbar-toggle .icon-bar {
 	background-color: #000000;
 	width: 30px;
-  height: 1px;
+  	height: 1px;
 }
 .navbar-inverse .navbar-toggle:hover {
-  background-color:white;
+  	background-color:white;
 }
 .navbar-inverse  {
-  border-color: #101010;  
-  width:100%;
-  top: -1em;
-  background-color: white;
+ 	border-color: #101010;  
+  	width:100%;
+  	top: -1em;
+  	background-color: white;
 }
 .navbar-nav {
 	font-family: Courier, Helvetica, Arial, sans-serif;
-	font-size: 1em;
+	font-size: 10px;
 	font-weight: 100;
 	-webkit-margin-before: 0;
-	position: static;	
+	position: static;
+
 }
 
 @media screen and (min-width: 620px) {
@@ -144,6 +145,7 @@
 }
 .menu-nav {
 	margin-top: 60px;
+	margin-bottom: 0px;
 }
 .menu-nav li {
 	margin: 0 20px 0 0;
@@ -154,7 +156,7 @@
 }
 .large-screen {
 	font-family: Courier, Helvetica, Arial, sans-serif;
-	font-size: 1em;
+	font-size: 10px;
 	font-weight: 100;
 	-webkit-margin-before: 0;
 	position:static;	

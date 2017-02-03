@@ -41,11 +41,11 @@
         <div class="navbar-collapse collapse pull-left" id="navbar-collapse-1">
           <ul class="nav navbar-nav large-screen">
           	<li><%= link_to "home", root_path %></li>
-            <li><%= link_to "about", '/static_pages/about' %></li>
-            <li><%= link_to "contact", '/static_pages/contact' %></li>  
-            <li><%= link_to "products", products_path %></li> 
+            <li><%= link_to "news", '/static_pages/about' %></li>
+            <li><%= link_to "boards", products_path %></li> 
             <li><%= link_to "polvo family", '/static_pages/polvo_family' %></li>  
-        		<li class= nav-search>
+        		<li><%= link_to "contact", '/static_pages/contact' %></li>
+            <li class= nav-search>
         		<form class="navbar-form navbar-left" role="search">
 						  <div class="form-group-mobile">
 						  	<%= form_tag("/products", method: "get") do %>	  
