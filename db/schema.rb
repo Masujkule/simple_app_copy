@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20170131171653) do
     t.integer  "user_id"
     t.text     "body"
     t.integer  "rating"
-    t.string   "product"
+    t.integer  "product_id"
     t.string   "references"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
