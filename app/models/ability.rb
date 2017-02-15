@@ -12,10 +12,11 @@ class Ability
     can :read, Product
   
     if user.admin?
-         can :manage : Product
-         can :manage : Comment
-    
-
+         can :manage, Product
+         can :destroy, Comment
+    else
+        can :read : all
+    end
   end
 end
 
