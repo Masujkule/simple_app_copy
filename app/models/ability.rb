@@ -15,7 +15,7 @@ class Ability
          can :manage, Product
          can :destroy, Comment
     else
-        can :read, : all
+        can :read, :all
     end
   end
 end
