@@ -1,6 +1,6 @@
 
 .rating, .product-reviews,
-.pagination, h4 {
+.pagination, .rated, h4 {
 	margin-left: 33px;
 }
 .comments {
