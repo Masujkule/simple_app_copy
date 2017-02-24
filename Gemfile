@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
+  gem "factory_girl_rails", "~> 4.0"
 end
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
@@ -53,18 +54,17 @@ end
 #You should probably keep only one of them.
 #While it's not a problem now, it could cause errors if you change the version of one of them later.
 
-group :development, :test do
-  gem 'rspec-rails', '~> 3.5'
-end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :production do
+  gem 'rspec-rails', '~> 3.5'  
   gem 'pg'
 end
 # 
 gem 'devise'
 gem 'cancancan', '~> 1.10'
 gem 'will_paginate', '~> 3.1.1'
+gem 'rails-controller-testing'
 
 

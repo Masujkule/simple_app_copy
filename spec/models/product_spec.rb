@@ -5,7 +5,7 @@ require 'rails_helper'
     before do
   
   @product = Product.create!(name: "race bike")
-  @user = User.create!(first_name: "Masuj",last_name: "Kule",email: "masuj@kule", password: "massuj" )
+  @user = User.create!(first_name: "Masuj",last_name: "Kule",email: "masuj@kule.pl", password: "massuj" )
   
   @product.comments.create!(rating: 1, user: @user, body: "Poor")
   @product.comments.create!(rating: 3, user: @user, body: "Ok")
