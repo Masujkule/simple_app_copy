@@ -16,11 +16,11 @@ class PaymentsController < ApplicationController
 
 	if charge.paid
 		Order.create(
-			product = @product.id,
-			user = @user.id,
-			total = @product.price
-			)
-		    		UserMailer.paid_success(@user, @product).deliver_now
+			:product => @product,
+			:user => @user,
+			:total => @product.price)
+			
+		    UserMailer.paid_success(@user, @product).deliver_now
 				flash.now[:notice] = "Payment processed successfully"
 
 	end
@@ -32,7 +32,7 @@ class PaymentsController < ApplicationController
     err = body[:error]
     flash[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
   end
-  redirect_to product_path(product)
+  redirect_to product_path(@product)
 end
     # The card has been declined
   end
