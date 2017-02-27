@@ -15,5 +15,6 @@ sequence(:email) { |n| "user#{n}@goucz.com" }
     last_name  "User"
     admin true
 		email
+		password "1234567"
 	end
 end

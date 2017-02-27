@@ -5,4 +5,8 @@
   data-name="<%= @product.name %>"
   data-description="<%= @product.description %>"
   data-amount="<%= @product.price*100 %>">
+  data-zip-code="true"
+  <%= hidden_field_tag(:product_id, @product_id) %>
 </script>
+
+

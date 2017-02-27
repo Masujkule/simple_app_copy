@@ -4,6 +4,7 @@ require 'rails_helper'
 
 		before do
 			@user = FactoryGirl.create(:user)
+			@user2 = FactoryGirl.create(:user2)
 			
 		  #@user = User.create!(email: "example1@pa.pl", password: "2345678")
 		  #@user = User.create!(email: "example2@pa.pl", password: "1234567")
@@ -37,7 +38,7 @@ require 'rails_helper'
 	end
 						
 			it 'redirects user2 to login' do
-			get :show, id: user2.id
+			get :show, id: @user.id
 			expect(response).to have_http_status(302)
 			expect(response).to redirect_to(root_path)
 
