@@ -6,7 +6,8 @@
 
 </div> <!--end header_products-->
 <br>
-     
+ 
+
 <%= link_to 'New Product', new_product_path %>
 
 <div class="container-fluid">
@@ -24,8 +25,9 @@
 
 <!--<img class="img-responsive img-products" src=http://cdn.shopify.com/s/files/1/0597/1765/products/Hawaiian_Hawaiian_1_cluster_web_1024x1024_v2_59be63d6-7a0b-4649-8464-f568cea271d5_1024x1024.jpg?v=1423096447>-->                        
 
-
-
+<%= link_to image_url("fullNews.jpg") do %>
+      <%= image_tag("@product.image_url", :alt => "Newsletter Preview", class: "grow shadow") %>
+<% end %>
 
 
 
