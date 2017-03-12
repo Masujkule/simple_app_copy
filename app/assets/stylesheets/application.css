@@ -42,14 +42,17 @@
 }
 .nav ul li {
 	display: inline-block;
-	background-color: #2ecee5;
 }
 .nav ul li a {
-	color: white;
-	text-transform: uppercase;
+	color: #9d9d9d;
 	letter-spacing: 0.05em;
 	text-decoration: none;
+	font-size: 2em;
 }
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+font-size: 2em;
+}
+
 .nav a:hover {
 	color: #ff0;
 	text-decoration: none;
@@ -57,7 +60,7 @@
 }
 /*Typography*/
 .nav a {
-	font-family:  Helvetica, Arial, sans-serif;
+	font-family:  Lato, Helvetica, Arial, sans-serif;
 	font-size: 2em;
 	font-weight: 100;
 	-webkit-margin-before: 0;
@@ -183,7 +186,6 @@
 	-webkit-margin-before: 0;
 	position: static;	
 }
-
 
 
 

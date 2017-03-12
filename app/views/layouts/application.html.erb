@@ -2,7 +2,7 @@
 <html>
   <head>
       <title>polvosurfboards</title>
-
+  <link href="https://fonts.googleapis.com/css?family=Anton|Lato:900|Muli:200|Oxygen" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -41,7 +41,20 @@
         <div class="navbar-collapse collapse pull-left" id="navbar-collapse-1">
           <ul class="nav navbar-nav large-screen">
           	<li><%= link_to "home", root_path %></li>
-            <li><%= link_to "about", '/static_pages/about' %></li>
+            <li>
+
+            
+               
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">about<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><%= link_to "contact", '/static_pages/contact' %></li> 
+                        <li><%= link_to "polvo family", '/static_pages/polvo_family' %></li>
+                    </ul>
+                
+              
+
+
+            </li> 
             <li><%= link_to "contact", '/static_pages/contact' %></li>  
             <li><%= link_to "products", products_path %></li> 
             <li><%= link_to "polvo family", '/static_pages/polvo_family' %></li>  
@@ -85,9 +98,10 @@
 
 <%= yield %>
 
+
 <footer class="footer">   
   <h1> &copy; 2017 polvosurfboards </h1>
 </footer>
-    
+ 
   </body>
 </html>
