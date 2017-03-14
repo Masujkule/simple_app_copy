@@ -1,0 +1,18 @@
+dont_track_that_file.rb
+*.rbc
+capybara-*.html
+.rspec
+/log
+/tmp
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/public/system
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+pickle-email-*.html
+*.DS_Store
+ruby-getting-started
+# Ignore bundler config
+/.bundle

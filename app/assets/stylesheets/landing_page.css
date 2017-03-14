@@ -1,0 +1,15 @@
+.landing_img {
+	margin: 0px;
+	padding-right: 0px;
+}
+.carousel-control.left, .carousel-control.right {
+	background-image: none;
+}
+.carousel {
+	padding-top: 18px;
+}
+@media screen and (max-width: 620px) {
+.body {
+
+}
+}	

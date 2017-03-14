@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>polvosurfboards</title>
+  <link href="https://fonts.googleapis.com/css?family=Anton|Lato:900|Muli:200|Oxygen" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+  
+  </head>
+
+  <body>
+  <nav>
+	<ul class= "menu-nav">
+		<li><%= link_to "career", root_path %></li>
+		<li><%= link_to "polvo family", root_path %></li>
+		<li><%= link_to "concept", root_path %></li>
+		<li><%= link_to "concept", root_path %></li>
+	</ul>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">   <!--nav container--> 
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="#">
+            <%= image_tag("polvo-logo.png", class:"logo_button") %>
+          </a>
+			
+        </div> <!--end navbar header-->  
+        <div class="navbar-collapse collapse pull-left" id="navbar-collapse-1">
+          <ul class="nav navbar-nav large-screen">
+          	<li><%= link_to "home", root_path %></li>
+            <li>
+
+            
+               
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">about<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><%= link_to "contact", '/static_pages/contact' %></li> 
+                        <li><%= link_to "polvo family", '/static_pages/polvo_family' %></li>
+                    </ul>
+                
+              
+
+
+            </li> 
+            <li><%= link_to "contact", '/static_pages/contact' %></li>  
+            <li><%= link_to "products", products_path %></li> 
+            <li><%= link_to "polvo family", '/static_pages/polvo_family' %></li>  
+        		<li class= nav-search>
+        		<form class="navbar-form navbar-left" role="search">
+						  <div class="form-group-mobile">
+						  	<%= form_tag("/products", method: "get") do %>	  
+						  	<%= text_field_tag(:q) %>   
+							  </div>
+							  <button type="submit" class="btn btn-default">
+							  <span class="glyphicon glyphicon-search"></span>
+							  </button> 
+							<% end %>
+						</form>  
+        		</li> 
+        		 <li class="login">
+					  <% if user_signed_in? %>
+					    <%= link_to('Log out', destroy_user_session_path, :method => :delete) %>
+					  <% else %>
+					    <%= link_to('Log in', new_user_session_path) %>
+					  <% end %>
+					  </li>              
+          </ul>
+
+ 
+        </div> <!--navbar nav-->
+      </div> <!--end nav container--> 
+    </nav> <!--end nav class-->
+
+
+    <% if notice %>
+    <div class="alert alert-info" role="alert">
+      <p id="notice" class="alert alert-info"><%= notice %></p>
+    </div>
+    <% end %>
+    <% if alert %>
+    <div class="alert alert-warning" role="alert">
+      <p id="alert" class="alert alert-info"><%= alert %></p>
+    </div>
+    <% end %>
+
+<%= yield %>
+
+
+<footer class="footer">   
+  <h1> &copy; 2017 polvosurfboards </h1>
+</footer>
+ 
+  </body>
+</html>

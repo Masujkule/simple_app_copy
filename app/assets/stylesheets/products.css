@@ -1,0 +1,41 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kamiladydak\/Desktop\/sample_app\/app\/assets\/stylesheets\/products\.scss}line{font-family:\000032}}
+.img-products {
+  margin: 10px;
+  width: 120em;
+  height: 100%; }
+
+.header_products h1 {
+	margin: 10px 25px;
+}
+.new_product a {
+	margin: 10px 25px;
+}
+.product-details {
+	padding: 0px;
+	font-family: Courier, Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: 100;
+	color: black;
+}
+.product-price {
+	padding: 0px;
+	font-family: Courier, Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: black;
+}
+.img-products {
+	height:100px;
+	width:100%;
+}
+.alert {
+	margin: 0px;
+}
+.alert-warning {
+	background-color: transparent;
+}
+
+
+
+
+/*# sourceMappingURL=products.css.map */
