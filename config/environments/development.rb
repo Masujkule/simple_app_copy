@@ -54,4 +54,6 @@ Rails.application.configure do
 
   # Any dynamic links that show up inside emails from your development environment generate the right URLs
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  # Transforms cofeescript files to plain javascript
+  config.app_generators.javascript_engine = :javascript
 end
