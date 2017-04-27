@@ -14,6 +14,8 @@
  Product.create(:name => "Pukas Salt Shaker", :description => "a vector board", :image_url => "https://asset1.surfcdn.com/pukas-surfboards-pukas-sixty-niner-surfboard-2015-model-blue.jpg?w=1200&h=1200&r=4&q=80&o=6mGdt$NHeAx6caXBCn2i8uaVT0Ij&V=KHCk")
  Product.create(:name => "Pukas Resin Cake", :description => "egg shape board", :image_url => "https://asset1.surfcdn.com/pukas-surfboards-pukas-sixty-niner-surfboard-2015-model-blue.jpg?w=1200&h=1200&r=4&q=80&o=6mGdt$NHeAx6caXBCn2i8uaVT0Ij&V=KHCk")
 
- Comment.create!(user: User.first, product: Product.first, rating: 1, body: "bad")
- Comment.create!(user: User.first, product: Product.first, rating: 4, body: "nice")
- Comment.create!(user: User.first, product: Product.first, rating: 2, body: "meh")
+ # Comment.create!(user: User.first, product: Product.first, rating: 1, body: "bad")
+ # Comment.create!(user: User.first, product: Product.first, rating: 4, body: "nice")
+ # Comment.create!(user: User.first, product: Product.first, rating: 2, body: "meh")
+
+ # User.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
