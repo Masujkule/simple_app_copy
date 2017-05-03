@@ -18,4 +18,4 @@
  # Comment.create!(user: User.first, product: Product.first, rating: 4, body: "nice")
  # Comment.create!(user: User.first, product: Product.first, rating: 2, body: "meh")
 
- # User.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+ User.create!(email: 'admin@example.com', password: 'polvosurf', admin:true)
