@@ -3,10 +3,19 @@ class StaticPagesController < ApplicationController
   	@products = Product.limit(5)
 	end
   
-  def about
+  def team
+  end
+
+  def polvo_people
+  end
+
+  def news
   end
 
   def contact
+  end
+
+  def order_surfboard
   end
 
 	def thank_you

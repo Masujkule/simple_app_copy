@@ -1,0 +1,51 @@
+.row {
+	margin-top: 93px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.form-control {
+	border-radius: 0px;
+	border-color: #000000;
+	font-family: Lato;
+	font-size: 13px;
+	
+}
+.dot {
+	background-color: #0142b6;
+	position: relative;
+}
+.dot1 {
+	width: 69px;
+	height: 69px;
+	top: 2em;
+	border-radius: 35px;
+}
+.dot2 {
+	width: 46px;
+	height: 46px;
+	top: 2.5em;
+	left: 12em;
+	border-radius: 23px;
+}
+.dot3 {
+	width: 11px;
+	height: 11px;
+	top: 3em;
+	border-radius: 6px;
+}
+.img_order_1 {
+	float: left;	
+}
+.order_col_1 {
+	top: 210px;
+}
+.order_col_2 {
+	top: 380px;
+}
+.order_col_3 {
+	display: inline;
+	width: 49%;
+}
+.order_col_4 {
+	top: 380px;
+}

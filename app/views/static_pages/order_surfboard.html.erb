@@ -1,0 +1,118 @@
+  
+<div class="row">
+
+  <div class="col-md-4">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="dot1 dot"></div>
+        <div class="dot2 dot"></div>
+        <div class="dot3 dot"></div>
+      </div>
+
+      <div class="col-md-6 order_col_1">
+        <div class="form-group order_col_1 ">
+          <%= label_tag :length %>
+          <%= text_field_tag :name, nil, class: "form-control", placeholder: "length" %>
+        </div>    
+
+        <div class="form-group">
+          <%= label_tag :width %>
+          <%= text_field_tag :name, nil, class: "form-control", placeholder: "length" %>
+        </div> 
+
+        <div class="form-group">
+          <%= label_tag :stinger_wood %>
+          <%= text_field_tag :name, nil, class: "form-control", placeholder: "length" %>
+        </div> 
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="row">
+      
+      <div class="col-md-3">
+          <div class="img_order_1">
+           <%= image_tag("order_1.png", :alt => "one") %>
+          </div>
+      </div>
+      
+      <div class="col-md-3 order_col_2">
+        <div class="form-group">
+            <%= label_tag :width %>
+            <%= text_field_tag :name, nil, class: "form-control", placeholder: "length" %>
+        </div>    
+      </div>
+
+      <div class="col-md-6">
+          <div class="img_order_2">
+            <%= image_tag("order_2.png", :alt => "one") %>
+          </div>
+        </div>    
+      </div>
+
+
+      <div class="form-group">
+        <%= label_tag :width %>
+        <%= text_field_tag :name, nil, class: "form-control", placeholder: "length" %>
+      </div> 
+
+      <div class="form-group orerder_col_3">
+        <%= label_tag :stinger_wood %>
+        <%= text_field_tag :name, nil, class: "form-control", placeholder: "length" %>
+      </div> 
+    </div>
+    
+  
+
+  <div class="col-md-4">
+    <div class="row">
+      <div class="col-md-6 order_col_1">
+        <div class="form-group order_col_1 ">
+          <%= label_tag :length %>
+          <%= text_field_tag :name, nil, class: "form-control", placeholder: "length" %>
+        </div>    
+
+        <div class="form-group">
+          <%= label_tag :width %>
+          <%= text_field_tag :name, nil, class: "form-control", placeholder: "length" %>
+        </div> 
+
+        <div class="form-group">
+          <%= label_tag :stinger_wood %>
+          <%= text_field_tag :name, nil, class: "form-control", placeholder: "length" %>
+        </div> 
+      </div>
+
+      <div class="col-md-6">
+      </div>
+    </div>
+  </div>
+
+
+</div>  <!-- end row--> 
+
+<h1>Contact Us</h1>
+
+<%= flash[:notice] %>
+
+<%= form_tag("/static_pages/thank_you") do %>
+<div class="row">
+  <div class="col-md-4">
+    <div class="form-group">
+      <%= label_tag :name %>
+      <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+    </div>      
+    <div class="form-group">
+      <%= label_tag :email, "Email Address" %>
+      <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+    </div>
+    <div class="form-group">
+      <%= label_tag :message %>
+      <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+    </div>      
+  </div>
+</div>
+<%= submit_tag "Send" %>   
+<% end %>
+</div>

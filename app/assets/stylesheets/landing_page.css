@@ -1,13 +1,93 @@
-.landing_img {
+a.carousel-control.left:hover, 
+a.carousel-control.right:hover,
+.carousel-control:focus {
+	opacity: 0.6;
+}
+.item{
+	width: 1150px;
+	left: 256px;
 	margin: 0px;
 	padding-right: 0px;
+	height: 100%;
 }
 .carousel-control.left, .carousel-control.right {
 	background-image: none;
 }
 .carousel {
-	padding-top: 18px;
+	left: 0px;
 }
+.carousel-indicators li {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	background-color: #B2B2B2;
+}
+.order_button_nav {
+	font-family: Lato;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 900;
+	letter-spacing: 0.9px;
+	text-align: center;
+	margin-top: -4px;
+	width: 222px;
+	height: 54px;
+	border: solid 4px #ff0000;		
+}
+
+.main_header >h3 {
+	position: absolute;
+	z-index: 1;
+	width: 685px;
+	height: 375px;
+	font-family: Lato;
+	text-transform: uppercase;
+	font-size: 100px;
+	font-weight: 600px;
+	line-height: 0.92;
+	bottom:-119px;
+	color: #0142b6;
+	left: -46px;
+	word-spacing: 9999999px
+}
+.main_text >h1 {
+	position: relative;
+	width: 565px;
+	height: 369px;
+	font-family: Lato;
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: -0.7px;
+	left: 280px;
+	top: 150px;
+	margin-bottom: 132px
+}
+.order_button {
+	position: relative;
+	text-transform: uppercase;
+	width: 222px;
+	height: 54px;
+	border: solid 3px #0142b6;	
+	float: right;
+	top: 20px;
+	right: 314px;
+	margin-bottom: 101px;
+}
+.order_button >h2 {
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 900;
+	letter-spacing: 0.9px;
+	text-align: center;
+	margin: 15px 0;
+}
+.carousel-inner {
+	left: 162px;
+}
+
+
+
+
 @media screen and (max-width: 620px) {
 .body {
 
