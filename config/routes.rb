@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   devise_for :users
   resources :users
+  resources :articles 
   resources :products do
   resources :comments
   resources :charge
