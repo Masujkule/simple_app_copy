@@ -2,12 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
-margin-top: 232px;
+.articles_wrapper {
+	margin-top: 150px
 }
 .articles_wrapper a {
   text-decoration: none;
   margin-left: 33px;
   font-family: Lato;
   font-size: 30px;
+}
+.img-articles {
+	margin: 0 auto;
+  width: 28em;
+  height: 100%; 
+}
+.img-articles:hover {
+  border: 7px solid #0142b6;
+}
+.article_image {
+	margin: 20px 25px;
+}
+.article_title {
+	display: inline;
+}
+.article_date {
+	display: inline;
+	float: right;
 }
