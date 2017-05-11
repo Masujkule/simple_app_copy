@@ -20,7 +20,7 @@
           <%= text_field_tag :name, nil, class: "form-control", placeholder: "length" %>
         </div> 
 
-        <div class="form-group">
+        <div class="form-group stingerwood_form">
           <%= label_tag :stinger_wood %>
           <%= text_field_tag :name, nil, class: "form-control", placeholder: "length" %>
         </div> 
@@ -41,26 +41,26 @@
         <div class="form-group">
             <%= label_tag :width %>
             <%= text_field_tag :name, nil, class: "form-control", placeholder: "length" %>
-        </div>    
+        </div>
       </div>
 
       <div class="col-md-6">
           <div class="img_order_2">
             <%= image_tag("order_2.png", :alt => "one") %>
           </div>
-        </div>    
+        </div>
       </div>
 
 
-      <div class="form-group">
-        <%= label_tag :width %>
+      <div class="form-group fins_form">
+        <%= label_tag :fins %>
         <%= text_field_tag :name, nil, class: "form-control", placeholder: "length" %>
-      </div> 
+      </div>
 
-      <div class="form-group orerder_col_3">
-        <%= label_tag :stinger_wood %>
+      <div class="form-group cosik_form">
+        <%= label_tag :cosik %>
         <%= text_field_tag :name, nil, class: "form-control", placeholder: "length" %>
-      </div> 
+      </div>
     </div>
     
   
@@ -69,19 +69,27 @@
     <div class="row">
       <div class="col-md-6 order_col_1">
         <div class="form-group order_col_1 ">
-          <%= label_tag :length %>
+          <%= label_tag :width %>
           <%= text_field_tag :name, nil, class: "form-control", placeholder: "length" %>
         </div>    
 
         <div class="form-group">
-          <%= label_tag :width %>
+          <%= label_tag :volume %>
           <%= text_field_tag :name, nil, class: "form-control", placeholder: "length" %>
         </div> 
 
         <div class="form-group">
-          <%= label_tag :stinger_wood %>
+          <%= label_tag :tail %>
           <%= text_field_tag :name, nil, class: "form-control", placeholder: "length" %>
-        </div> 
+        </div>
+
+        <div class="form-group tail_form">
+          <%= label_tag :tail %>
+          <%= text_field_tag :name, nil, class: "form-control", placeholder: "length" %>
+        </div>
+
+
+
       </div>
 
       <div class="col-md-6">
@@ -92,7 +100,7 @@
 
 </div>  <!-- end row--> 
 
-<h1>Contact Us</h1>
+<h1 class="personal_inf">Personal information</h1>
 
 <%= flash[:notice] %>
 
@@ -108,11 +116,24 @@
       <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
     </div>
     <div class="form-group">
+      <%= label_tag :email, "Email Address" %>
+      <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+    </div>
+    <div class="form-group">
+      <%= label_tag :email, "Email Address" %>
+      <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+    </div>
+    <div class="form-group">
+      <%= label_tag :email, "Email Address" %>
+      <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+    </div>
+    <div class="form-group">
       <%= label_tag :message %>
       <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
-    </div>      
-  </div>
+    </div>
+    <div class="send_button">
+      <%= submit_tag "Send" %>
+    <% end %>
 </div>
-<%= submit_tag "Send" %>   
-<% end %>
+  </div>
 </div>

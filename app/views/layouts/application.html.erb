@@ -36,7 +36,7 @@
           <ul class="nav navbar-nav large-screen">
           	<li><%= link_to "home", root_path %></li>
             <li><%= link_to "team", '/static_pages/team' %></li>  
-            <li><%= link_to "polvo people", '/static_pages/polvo_people' %></li> 
+            <li><%= link_to "polvo people", '/static_pages/team' %></li>
             <li><%= link_to "surfboards", products_path  %></li>  
             <li><%= link_to "news", '/articles' %></li>
             <li><%= link_to "contact", '/static_pages/contact' %></li>  
@@ -83,6 +83,11 @@
 
 <footer class="footer">   
   <h1> &copy; 2017 polvosurfboards </h1>
+  <div class="footer_icons">
+    <%= image_tag("phone.svg", class:"phone_icon") %>
+    <%= image_tag("mail.svg", class:"mail_icon") %>
+    <%= image_tag("fb.svg", class:"fb_icon") %>
+  </div>
 </footer>
  
   </body>

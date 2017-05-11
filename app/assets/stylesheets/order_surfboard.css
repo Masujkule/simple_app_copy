@@ -8,7 +8,6 @@
 	border-color: #000000;
 	font-family: Lato;
 	font-size: 13px;
-	
 }
 .dot {
 	background-color: #0142b6;
@@ -33,6 +32,11 @@
 	top: 3em;
 	border-radius: 6px;
 }
+.personal_inf {
+    margin-top: 75px;
+    margin-left: 33px;
+    text-transform: uppercase;
+}
 .img_order_1 {
 	float: left;	
 }
@@ -48,4 +52,25 @@
 }
 .order_col_4 {
 	top: 380px;
+}
+.stingerwood_form {
+    margin-top: 239px;
+}
+.tail_form {
+    margin-top: 239px;
+}
+.fins_form {
+    width: 50%;
+}
+.cosik_form {
+    width: 50%;
+}
+form input[type=submit], form input[type=button], form button {
+    border: 3px solid #0142b6;
+    width: 33%;
+    padding: 12px;
+    margin-top: 37px;
+    margin-left: 5px;
+    text-transform: uppercase;
+
 }

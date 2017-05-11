@@ -50,7 +50,9 @@
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
 font-size: 2em;
 }
-
+.item {
+    margin-top: 200px;
+}
 .nav a:hover {
 	color: #0142b6;
 	text-decoration: none;
@@ -149,7 +151,8 @@ font-size: 2em;
 
 
 .order_button_nav {
-	margin-top: -8px;	
+	margin-top: -8px;
+    margin-left: 18px;
 	border: solid 3px #0142b6;
 	padding: 5px 17px;
 
@@ -186,10 +189,19 @@ font-size: 2em;
 .footer {
 	width: 100%;
 	height: 3em;
-	margin: 1em auto;
-	border: 1px solid black;
+	margin: 10em auto;
+	border-top: 12px solid black;
 	padding: 0 15px;
 }
+.footer_icons {
+    display: inline;
+    float: right;
+    margin: 50px;
+}
+.footer_icons img {
+    margin: 0 8px;
+}
+
 .footer>h1 {
 	padding: 0.5em;
 	float:left;

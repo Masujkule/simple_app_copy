@@ -1,6 +1,5 @@
 .img-products {
-  margin-top: 116px;
-  margin-left: 114px;
+    margin: 0 auto;
   width: 28em;
   height: 100%; 
 }
@@ -14,6 +13,7 @@
 	margin: 10px 25px;
 }
 .product-details {
+    margin: 0 auto;
 	padding: 0px;
 	font-family: Lato, Courier, Helvetica, Arial, sans-serif;
 	font-size: 1em;
