@@ -13,3 +13,10 @@
 .team_body {
   margin: 80px;
 }
+.team_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.team_wrapper:nth-child(even) {
+  flex-direction: row-reverse;
+}

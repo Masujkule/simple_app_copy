@@ -1,36 +1,33 @@
-<div class= "polvo_people_resume">
-	
-	<div class="row">
-		<div class= "col-xs-12 col-md-6">
-			<%= image_tag("about_a1.png", :class => "item_polvo_people" , :alt => "rss feed") %>
-		</div>
-	
-		<div class= "col-xs-12 col-md-6 item_polvo">
-			<h1 class= "polvo_names">Jędrzej Jankowiak</h1>
-			<h2 class=polvo_text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h2> 
-		</div>
-	</div>
 
-	<div class="row">
-		<div class= "col-xs-12 col-md-6 item_polvo">
-			<h2 class=polvo_text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h2> 
-		</div>
+<div class="row polvo_row">
+  <div class="col-xs-12 col-md-2">
+    <div class="dot1 dot"></div>
+    <div class="dot2 dot"></div>
+    <div class="dot3 dot"></div>
+  </div>
 
-		<div class= "col-xs-12 col-md-6 item_polvo">
-			<%= image_tag("about_a2.png", :class => "item_polvo_people" , :alt => "rss feed") %>
-		</div>
-	</div>
+  <%= form_tag("/static_pages/thank_you") do %>
+      <div class="col-xs-12 col-md-4">
+        <div class="form-group">
+          <%= label_tag :email, "email address" %>
+          <%= text_field_tag :email, nil, class: "form-control", placeholder: "email" %>
+        </div>
+        <div class="form-group">
+          <%= label_tag :password, "password" %>
+          <%= text_field_tag :email, nil, class: "form-control", placeholder: "password" %>
+        </div>
+        <div class="send_button">
+          <%= submit_tag "login" %>
+        </div>
+      </div>
+  <% end %>
 
-	<div class="row">
-		<div class= "col-xs-12 col-md-6 item_polvo">
-			<%= image_tag("surfszponcer.png", :class => "item_polvo_people" , :alt => "rss feed") %>
-		</div>
-	
-		<div class= "col-xs-12 col-md-6">
-			<h2 class=polvo_text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h2> 
-		</div>
-	</div>
-
+  <div class="col-xs-12 col-md-6">
+    <div class="dot4 dot"></div>
+    <div class="dot5 dot"></div>
+    <div class="dot6 dot"></div>
+    <div class="dot7 dot"></div>
+  </div>
 </div>
  
 

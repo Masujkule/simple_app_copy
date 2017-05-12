@@ -1,10 +1,61 @@
-.map {
-	margin: 10px 0;
-	padding: 0px;
+.polvo_row {
+    margin-top: 320px;
+    margin-left: 0px;
+    margin-bottom: 300px;
 }
-.contact p {
-	margin: 33px 0;
+.form-control {
+    border-radius: 0px;
+    border-color: #000000;
+    font-family: Lato;
+    font-size: 13px;
 }
-.form-group {
-	padding: 5px;
+.dot {
+    background-color: #0142b6;
+
+}
+.dot1 {
+    width: 69px;
+    height: 69px;
+    top: 0em;
+    border-radius: 35px;
+}
+.dot2 {
+    width: 46px;
+    height: 46px;
+    top: 2.5em;
+    left: 12em;
+    border-radius: 23px;
+}
+.dot3 {
+    width: 11px;
+    height: 11px;
+    top: 3em;
+    left: 2em;
+    border-radius: 6px;
+}
+.dot4 {
+    width: 11px;
+    height: 11px;
+    top: 3em;
+    border-radius: 6px;
+}
+.dot5 {
+    width: 24px;
+    height: 24px;
+    top: 8em;
+    left: 5em;
+    border-radius: 13px;
+}
+.dot6 {
+    width: 46px;
+    height: 46px;
+    top: 12em;
+    border-radius: 24px;
+}
+.dot7 {
+    width: 69px;
+    height: 69px;
+    top: 15em;
+    left: 8em;
+    border-radius: 40px;
 }

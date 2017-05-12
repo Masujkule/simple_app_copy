@@ -1,5 +1,11 @@
+.products {
+  margin-top: 223px;
+}
+.img-zoom {
+    padding: 55px;
+}
 .img-products {
-    margin: 0 auto;
+  margin: 0 auto;
   width: 28em;
   height: 100%; 
 }
