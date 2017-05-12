@@ -1,11 +1,11 @@
 <% cache product do %>
       <div class="col-xs-12 col-md-6">
       <%=link_to image_tag(product.image_url, class: "img-responsive img-products") ,product if product.image_url %>
-      
-        <h1 class="product-details"><%=product.name %></h1>
-        <h2 class="product-details"><%=product.description %></h2>
-        <p2 class="product-details"><%=product.color %></p2>
-        <strong class="product-price">'price: $'<%=product.price %></strong>
-
+        <div class="product-description">
+          <h1 class="product-details"><%=product.name %></h1>
+          <h2 class="product-details"><%=product.description %></h2>
+          <p2 class="product-details"><%=product.color %></p2>
+          <strong class="product-price">'price: $'<%=product.price %></strong>
+        </div>
       </div><!-- /col -->
 <% end %>

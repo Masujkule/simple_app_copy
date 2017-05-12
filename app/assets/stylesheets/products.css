@@ -12,15 +12,15 @@
 .new_product a {
 	margin: 10px 25px;
 }
-.product-details {
-    margin: 0 auto;
-	padding: 0px;
-	font-family: Lato, Courier, Helvetica, Arial, sans-serif;
-	font-size: 1em;
-	font-weight: 400;
-	color: black;
-	/*transform: rotate(90deg);
-	transform-origin: left top 0;*/
+/*.product-details {*/
+    /*margin: 0 auto;*/
+	/*padding: 0px;*/
+	/*font-family: Lato, Courier, Helvetica, Arial, sans-serif;*/
+	/*font-size: 1em;*/
+	/*font-weight: 400;*/
+	/*color: black;*/
+	/*!*transform: rotate(90deg);*/
+	/*transform-origin: left top 0;*!*/
 }
 .product-price {
 	padding: 0px;
@@ -29,7 +29,9 @@
 	font-weight: bold;
 	color: black;
 }
-
+.product-description {
+    margin: 0 auto;
+}
 .alert {
 	margin: 0px;
 }

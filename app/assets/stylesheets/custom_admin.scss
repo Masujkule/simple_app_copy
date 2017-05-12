@@ -108,3 +108,8 @@ form fieldset.inputs {
   color: black;
   text-shadow: none;
 }
+form input[type=submit]:not(.disabled):hover, form input[type=button]:not(.disabled):hover, form button:not(.disabled):hover {
+  background-color: #0142b6;
+  background-image: none;
+  color: white;
+}

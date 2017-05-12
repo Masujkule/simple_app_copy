@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   devise_for :users
   resources :users
-  resources :articles 
+  resources :articles
+  resources :teams
   resources :products do
   resources :comments
   resources :charge
@@ -12,7 +13,6 @@ Rails.application.routes.draw do
 
   resources :orders, only: [:index, :show, :create, :destroy]
   get 'static_pages/home'
-  get 'static_pages/team'
   get 'static_pages/polvo_people'
   get 'static_pages/news'
   get 'static_pages/contact'

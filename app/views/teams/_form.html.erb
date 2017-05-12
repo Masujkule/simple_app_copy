@@ -1,0 +1,30 @@
+<%= form_for @team do |f| %>
+    <% if @team.errors.any? %>
+        <div class="errors">
+          <h2><%= pluralize(@ateam.errors.count, "error") %> prevented this rider from saving</h2>
+          <ul>
+            <%= @team.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <p>
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </p>
+
+    <p>
+      <%= f.label :body %><br>
+      <%= f.text_area :body %>
+    </p>
+
+    <p>
+      <%= f.file_field :image %>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>
