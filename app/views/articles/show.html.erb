@@ -1,20 +1,19 @@
-<div class="articles_wrapper">
+<div class="container articles_wrapper_show">
   <div class="article_image_show">
-  <p>
-    <%= image_tag @article.image.url %>
-  </p>
+    <div class="image">
+      <%= image_tag @article.image.url %>
+    </div>
+    <h1 class="title">
+      <%= @article.title %>
+    </h1>
   </div>
-  <div class="article_title_show">
-  <h1 class="title">
-    <%= @article.title %>
-  </h1>
-  </div>
+
   <p class="article_date_show">
-    Submitted <%= time_ago_in_words(@article.created_at) %> ago|
+    Submitted <%= time_ago_in_words(@article.created_at) %> ago
   </p>
 
   <div class="article_body_show">
-    <p class="body">
+    <p>
       <%= @article.body %>
     </p>
   </div>

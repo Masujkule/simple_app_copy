@@ -1,22 +1,39 @@
 // Place all the styles related to the team controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+.wrap {
+	margin-top: 270px;
+	margin-left: 200px;
+	margin-right: 200px;
+}
 .team_wrapper {
-  margin-top: 180px;
+  margin-top: px;
   padding: 0px;
 }
 .team_name {
   margin-top: 123px;
   color: #0142b6;
+  padding: 33px;
 }
 .team_body {
   margin: 80px;
 }
+.team_image {
+	margin: 0px;	
+}
 .team_wrapper {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
-.team_wrapper:nth-child(even) {
+.row-reverse:nth-child(even) {
   flex-direction: row-reverse;
+}
+.col-md-6 {
+	padding: 0px;
+}
+.team_body {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }

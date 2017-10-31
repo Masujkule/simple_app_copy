@@ -2,18 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.articles_wrapper {
-	margin-top: 150px
-}
-.articles_wrapper a {
-  text-decoration: none;
-  margin-left: 33px;
-  font-family: Lato;
-  font-size: 30px;
-}
+.articles_wrapper_show {
+	margin-top: 150px;
+    a {
+      text-decoration: none;
+      margin-left: 33px;
+      font-family: Lato;
+      font-size: 30px;
+    }
+  }
 .img-articles {
   margin: 0 auto;
-  width: 28em;
+  width: 45em;
   height: 100%; 
 }
 .img-articles:hover {
@@ -24,18 +24,30 @@
 }
 .article_title {
 	display: inline;
+   a {
+      text-decoration: none;
+      margin-left: 33px;
+      font-family: Lato;
+      font-size: 30px;
+    }
 }
 .article_date {
 	display: inline;
 	float: right;
 }
 .article_image_show {
-    margin-top: 139px;
-    float:right
-}
-.article_image_show img {
-  max-width: 75%;
-  float: right;
+  margin-top: 139px;
+  margin-bottom: 100px;
+  float:right;
+  img {
+    max-width: 50%;
+    float: right;
+    margin-right: 33px;
+  }
+  .title {
+    margin-top: 115px;
+    margin-left: 80px;
+  }
 }
 .article_date_show {
   display: inline;
@@ -44,11 +56,12 @@
 .article_title_show {
   margin-left: 150px;
   margin-top: 90px;
-}
-.article_title_show h1 {
-  margin-top: 60px;
+  .title {
+    display: inline;
+    margin-top: 60px;
+  }
 }
 .article_body_show {
   width: 50%;
-  margin: 0 auto;
+  margin-left: 80px;
 }

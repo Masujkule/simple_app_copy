@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="row">
+  <div class="row wrap">
     <% cache @teams do %>
         <% @teams.each do |team| %>
             <%= render partial: "team", locals: {team: team} %>

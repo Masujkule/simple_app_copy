@@ -15,10 +15,12 @@
 
 *{ box-sizing: border-box;
 }
+
 .container-fluid .navbar-header {
 	margin-top: 10px;
+	padding-left: 33px;
+	padding-right: 33px; 
 }
-
 .navbar-brand>img{
   max-width: 212px;
   margin-top: 23px;
