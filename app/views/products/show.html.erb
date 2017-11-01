@@ -1,10 +1,8 @@
 <div class ="row products">
 <div class="col-xs-12 col-md-6">
-
-
-    
-<%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: "@product.image_url_large") %>
-
+  <div class="product_image_show">
+    <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: "@product.image_url_large") %>
+  </div>
 </div>
 
 <div class="col-xs-12 col-md-6">
@@ -16,7 +14,7 @@
   <%= @product.name %>
 </p>
 
-<p>
+<p class="description_show">
   <strong>Description:</strong>
   <%= @product.description %>
 </p>

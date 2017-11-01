@@ -1,9 +1,6 @@
 .products {
   margin-top: 60px;
 }
-.img-zoom {
-    padding: 55px;
-}
 .img-products {
   margin: 0 auto;
   width: 28em;
@@ -46,8 +43,13 @@
 .alert-warning {
 	background-color: transparent;
 }
-
-
+.product_image_show {
+	margin-top: 70px;
+	padding: 80px;	
+}
+.description_show {
+	margin-top: 130px;
+}
 
 
 /*# sourceMappingURL=products.css.map 
